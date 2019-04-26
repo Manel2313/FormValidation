@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css\style.css">
+    <script type="text/javascript" src="javascript\script.js"></script>
+    <title>Form Validation</title>
+</head>
+
+<body>
+    <div class="formulaire">
+        <form id="myForm"  class="form-class">
+            <h3>Fill Your Information!</h3>
+            <div class="form-labels">
+                <label>Name*</label>
+                <input id="name" name="fname" type="text">
+                <label>Address*</label>
+                <input id="address" name="faddress" type="text">
+                <label>Email*</label>
+                <input id="email" name="fmail" type="text" placeholder="mail@serveur.com">
+                <label>Password*</label>
+                <input id="password" name="fpwd" type="password">
+                <label>Comments*</label>
+                <textarea id="comments" name="fcmts" type="text-area"></textarea>
+                <span id="submit" class="btn-span" onclick="return validateForm()" >Submit</span>
+                <span id="Reset" class="btn-span" onclick="reset()" value="Reset">Reset</span>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
